@@ -1,0 +1,67 @@
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+body {
+  height: 900px;
+ padding-right: 10px;
+}
+
+.col-md-3{
+  height: 1200px;
+  width: 900px;
+  margin-left: 0px;
+}
+
+.col-md-pull-3 {
+  right:0%;
+}
+#leftCol{
+  margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+#sidebar {
+  height: 100%;
+  width: 225px;
+  background-color: #000;
+  float: left;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #000 solid;
+  border-right-width:5px;
+}

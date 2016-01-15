@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bootstrap 3 Affix Sidebar</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--Angular CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+
+    <!-- UI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	
+  <body ng-app="app">
+
+
+
+<!--main-->
+<div class="container">
+	<div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+        <ul class="nav nav-stacked" id="sidebar">
+          <li >
+            <a ui-sref="home" ui-sref-active="active">Profile</a>
+          </li>
+          <li >
+            <a ui-sref="addressDetails" ui-sref-active="active" >Add address details</a>
+          </li>
+          <li>
+            <a ui-sref="getLocation" ui-sref-active="active">Locate office</a>
+          </li>
+        </ul>
+      </div><!--/left-->
+    </div><!--/row-->
+    <ui-view>
+    </ui-view>
+  </div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+    <script src="app.js"></script>
+    <script src="address/formController.js"></script>
+	</body>
+</html>
